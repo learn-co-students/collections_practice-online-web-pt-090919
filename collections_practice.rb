@@ -21,12 +21,15 @@ end
 def swap_elements(array)
   # takes in array and swaps the second and third elements
   # *Array indices start at 0
-  array[1], array[2] = array[2], array [1]
+  
+  array[1], array[2] = array[2], array[1]
   array
 end
 
-# def swap_elements_from_to(array)
-# end
+def swap_elements_from_to(array, index, destination_index)
+  array[index], array[destination_index] = array[destination_index], array[index]
+  array
+end
 
 # swap_elements_from_to(["a", "b", "c"],0,2) #=> ["c", "b", "a"]
 # swap_elements_from_to(["a", "b", "c"],2,1) #=> ["a", "c", "b"]
