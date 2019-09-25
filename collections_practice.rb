@@ -1,3 +1,5 @@
+require 'pry'
+
 def sort_array_asc(array)
   array.sort do |x, y|
     x <=> y
@@ -37,4 +39,10 @@ def add_s(array)
 end
 end
 
-
+def kesha_maker(array)
+  array.collect do |x|
+    binding.pry
+    x = array[2] << "$"
+  end
+    
+end
